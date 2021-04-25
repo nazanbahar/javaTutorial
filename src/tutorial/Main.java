@@ -431,7 +431,7 @@ public class Main {
 		int toplamFriend1 = 0;
 		int toplamFriend2 = 0;
 
-		// iki sayınin tüm bolenlerini bulmaktır.
+		// iki sayınin tüm bolenlerini bulmaktır...
 		for (int f = 1; f < friendnumber1; f++) {
 			if (friendnumber1 % f == 0) {
 				toplamFriend1 = toplamFriend1 + f;
