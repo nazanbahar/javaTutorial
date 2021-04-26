@@ -43,14 +43,14 @@ public class Main {
 		// int(integer) | float(floating-point number)
 		// ---8 bytes---
 		// long(integer) | double(floating-point number)
-		int sayi1 = 12;
-		sayi1 = 1234567890;
-		byte sayi2 = 12;
-		sayi2 = 127;
-		boolean dogruMu = false;
+		//int sayi1 = 12;
+		//sayi1 = 1234567890;
+		// byte sayi2 = 12;
+		int sayi2 = 127;
+		//boolean dogruMu = false;
 
-		String sehirString = "ANKARA"; // char array
-		char karakter = 'A'; // Not compiled double quotes - "A" ,single quotes : 'A'
+		//String sehirString = "ANKARA"; // char array
+		//char karakter = 'A'; // Not compiled double quotes - "A" ,single quotes : 'A'
 		// sayi = 135555555555555; -Not Compiled:The literal -- of type int is
 		// out of range
 		// sayi = "Ankara"; -Not Compiled:Type mismatch: Cannot convert from
@@ -203,7 +203,7 @@ public class Main {
 		// s1. adding decimals
 		// s2. print the largest number
 
-		double[] myList1 = new double[4]; // ver1
+		//double[] myList1 = new double[4]; // ver1
 		double[] myList2 = { 1.2, 6.3, 4.3, 5.6 }; // ver2
 		double total = 0;
 		double max = myList2[0];
@@ -375,6 +375,8 @@ public class Main {
 
 		}
 
+		
+		
 		// MINI PROJECT-2 - BOLD VOWELS AND THIN VOWELS//
 		char harf = 'E';
 
