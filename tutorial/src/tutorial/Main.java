@@ -454,7 +454,7 @@ public class Main {
 
 		
 		// FIND THE NUMBER - SAYI BULMA//
-		//sayi dizisi
+		//number arrays
 		int[] findNumbers = new int[] { 1, 2, 5, 7, 9, 0 };
 		int search = 7;
 		boolean isThere = false; // Thinking there is no number.
