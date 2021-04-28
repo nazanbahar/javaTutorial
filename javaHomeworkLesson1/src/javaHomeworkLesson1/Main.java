@@ -1,10 +1,6 @@
 package javaHomeworkLesson1;
 
 
-/**
- * @author User
- *Lesson 1 HomeWorks
- */
 public class Main {
 
 	public static void main(String[] args) {
