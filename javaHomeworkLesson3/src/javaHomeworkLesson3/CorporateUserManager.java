@@ -1,5 +1,6 @@
 package javaHomeworkLesson3;
 
+
 public class CorporateUserManager extends UserManager {
 	
 	

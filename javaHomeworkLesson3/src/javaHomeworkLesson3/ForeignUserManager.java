@@ -1,5 +1,6 @@
 package javaHomeworkLesson3;
 
+
 public class ForeignUserManager extends UserManager {
 	public ForeignUserManager(Logger logger) {
 		super(logger);

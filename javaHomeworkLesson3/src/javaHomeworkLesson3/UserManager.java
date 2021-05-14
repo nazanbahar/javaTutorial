@@ -1,8 +1,10 @@
 package javaHomeworkLesson3;
 
+
 public class UserManager {
 	//super class - base
-		
+	
+	
 	//private attribute
 	private Logger logger;
 	

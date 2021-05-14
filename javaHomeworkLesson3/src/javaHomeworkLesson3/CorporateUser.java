@@ -1,5 +1,6 @@
 package javaHomeworkLesson3;
 
+
 public class CorporateUser extends User {
 
 	private int id;

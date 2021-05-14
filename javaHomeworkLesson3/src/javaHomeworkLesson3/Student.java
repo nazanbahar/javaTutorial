@@ -1,5 +1,6 @@
 package javaHomeworkLesson3;
 
+
 public class Student extends User {
 	//attribute
 	private int id;

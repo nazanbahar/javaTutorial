@@ -1,5 +1,6 @@
 package javaHomeworkLesson3;
 
+
 public class InstructorManager extends UserManager {
 
 	public InstructorManager(Logger logger) {

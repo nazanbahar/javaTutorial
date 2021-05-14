@@ -1,5 +1,6 @@
 package javaHomeworkLesson3;
 
+
 public class StudentManager extends UserManager {
 	//super class - base
 	
@@ -9,7 +10,7 @@ public class StudentManager extends UserManager {
 	}
 
 
-	@Override public void add (User user) {
+	  @Override public void add (User user) {
 	  System.out.println(user.getId()+user.getEmail() + " student kaydedildi");
 	  
 	  }

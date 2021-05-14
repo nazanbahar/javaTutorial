@@ -1,6 +1,5 @@
 package javaHomeworkLesson3;
 
-
 public class Main {
 
 	/**

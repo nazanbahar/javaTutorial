@@ -1,5 +1,6 @@
 package javaHomeworkLesson3;
 
+
 public class ForeignUser extends User{
 	private int id;
 	private int userId;
