@@ -30,9 +30,7 @@ public class MernisServiceAdapter implements CustomerCheckService {
 		}
 		
 		return result;
-		
 	}
-
 }
 
 

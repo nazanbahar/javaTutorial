@@ -8,6 +8,7 @@ public interface CustomerCheckService {
 	boolean CheckIfRealPerson(Customer customer);
 }
 
+
 //s1. kullanıcı kişi ile ilgili kontrolllerni yapmak isteriz.
 //s2. Bir method yazarken diğer müşterilerin de isteyebileceği düşünülerek, 
 //interface de ortak operasyon olarka tanımlanabilir.

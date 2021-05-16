@@ -28,7 +28,6 @@ public class StarbucksCustomerManager extends BaseCustomerManager {
 		
 	}
 }
-
 //s1. Senaryo gereği; StarbucksCustomerManager için mernis doğrulaması istenmektedir.
 //s2. Bu doğrulama NeroCustomer için istenmemektedir.
 //s3. USING: FIRST WAY:

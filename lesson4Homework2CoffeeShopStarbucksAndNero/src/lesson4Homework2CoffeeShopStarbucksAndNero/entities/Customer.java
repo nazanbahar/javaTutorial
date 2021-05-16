@@ -15,7 +15,7 @@ public class Customer implements Entity {
 	private LocalDate dateOfBirth;
 	private String nationalityId;
 	
-	
+	//constructor
 	public Customer() {}
 	
 	public Customer(int id, String firstName, String lastName, LocalDate dateOfBirth, String nationalityId) {

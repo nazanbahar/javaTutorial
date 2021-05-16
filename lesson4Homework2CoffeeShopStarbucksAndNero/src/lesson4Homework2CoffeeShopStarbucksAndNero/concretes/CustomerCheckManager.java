@@ -11,5 +11,4 @@ public class CustomerCheckManager implements CustomerCheckService {
 	}
 
 }
-
 //s1. return true ile doğrulanmış varsayıyoruz.
