@@ -2,17 +2,22 @@ package lecture4Homework3GameStore;
 
 import java.time.LocalDate;
 
-import Concrete.CampaignManager;
-import Concrete.CustomerManager;
-import Concrete.GameManager;
-import Concrete.OrderManager;
-import Concrete.UserManager;
-import Entities.Campaign;
-import Entities.Customer;
-import Entities.Game;
-import Entities.KidsCampaign;
-import Entities.Order;
-import Entities.User;
+import lecture4Homework3GameStore.abstracts.BaseCustomerManager;
+import lecture4Homework3GameStore.adapters.MernisServiceAdapter;
+import lecture4Homework3GameStore.concretes.CampaignManager;
+import lecture4Homework3GameStore.concretes.CustomerManager;
+import lecture4Homework3GameStore.concretes.GameManager;
+import lecture4Homework3GameStore.concretes.KidsCustomerManager;
+import lecture4Homework3GameStore.concretes.OrderManager;
+import lecture4Homework3GameStore.concretes.StudentCustomerManager;
+import lecture4Homework3GameStore.concretes.UserManager;
+import lecture4Homework3GameStore.entities.Campaign;
+import lecture4Homework3GameStore.entities.Customer;
+import lecture4Homework3GameStore.entities.Game;
+import lecture4Homework3GameStore.entities.KidsCampaign;
+import lecture4Homework3GameStore.entities.Order;
+import lecture4Homework3GameStore.entities.User;
+
 
 public class Main {
 
@@ -39,11 +44,11 @@ public class Main {
 		Customer can = new Customer();
 		can.setId(1);
 		can.setUserId(0001);
-		can.setNationalIdentityId("3423433");
+		can.setNationalityId("3423433");
 		can.setFirstName("Can");
 		can.setLastName("Bahar");
 		can.setEmail("can@can");
-		can.setDateOfBirthYear(2001);
+		can.setDateOfBirth(LocalDate.of(2000,02,07));
 		
 		CustomerManager customerManager = new CustomerManager();
 		customerManager.add(can);
@@ -76,6 +81,27 @@ public class Main {
 		System.out.println("____________________________________");
 		orderManager.buy(can, kids, game);
 		System.out.println("____________________________________");
+		
+		
+		BaseCustomerManager baseCustomerManager = new StudentCustomerManager(new MernisServiceAdapter());
+		
+		BaseCustomerManager studentCustomerManager = new StudentCustomerManager(new MernisServiceAdapter());
+		
+		BaseCustomerManager kidsCustomerManager = new KidsCustomerManager();
+		//baseCustomerManager.save(new Customer());
+		
+		//customer
+		Customer customer = new Customer();
+		customer.setId(1);
+		customer.setFirstName("NAME");
+		customer.setLastName("SURNAME");
+		customer.setDateOfBirth(LocalDate.of(2000,02,07));  //uyarı: doğrulama, doğum yılı ile olmaktadır. Yıl değişmesi yeterlidir. 
+		customer.setNationalityId("11111111111");
+		
+		
+		baseCustomerManager.save(customer);  // all options definition
+		studentCustomerManager.save(customer); //for starbucksCustomer with Mernis Validation
+		kidsCustomerManager.save(customer);   //for neroCustomer - NON-Mernis validation
 		
 		
 		
